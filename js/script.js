@@ -34,4 +34,4 @@ createApp({
             ]  
         }
     }
-});
+}).mount('#app');
