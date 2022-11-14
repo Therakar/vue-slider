@@ -34,4 +34,23 @@ createApp({
             ]  
         }
     }
+,
+methods: {
+    nextImg(){
+        
+        if (this.tabIndex > this.slides.lenght - 1){
+            this.tabIndex = 0;
+        }else{
+           this.tabIndex++ 
+        }
+    },
+    prevImg(){
+        
+        if (this.tabIndex < 0){
+            this.tabIndex = this.slides.lenght - 1
+        } else{
+            this.tabIndex--
+        }
+    }
+}
 }).mount('#app');
